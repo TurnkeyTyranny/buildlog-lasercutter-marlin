@@ -1363,6 +1363,7 @@ void process_commands()
       break;
     case 5:  //M5 stop firing laser
 	  laser.status = LASER_OFF;
+    laser.intensity = (float) 0.0;
           lcd_update();
 	  prepare_move();
       break;
